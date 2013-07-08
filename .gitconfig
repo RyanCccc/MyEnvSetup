@@ -1,0 +1,8 @@
+[user]
+	name = RyanCccc
+	email = chenrd769@gmail.com
+[alias]
+	st = status
+	ci = commit -v
+[push]
+	default = current

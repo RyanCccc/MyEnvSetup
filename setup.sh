@@ -8,4 +8,5 @@ cp .bashrc ~/
 mv ~/.vimrc ~/.vimrc_backup
 cp .vimrc ~/
 cp -r bundle ~/.vim/
+cp .gitconfig ~/
 source ~/.bashrc
