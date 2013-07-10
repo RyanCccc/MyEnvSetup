@@ -1,4 +1,16 @@
 #!/bin/bash
+echo 'Git Submodule'
+git submodule update --init
+
+echo 'Install jedi'
+sudo pip install jedi
+
+echo 'Installing vim-pathogen'
+sudo apt-get install curl
+mkdir -p ~/.vim/autoload ~/.vim/bundle; \
+    curl -Sso ~/.vim/autoload/pathogen.vim \
+        https://raw.github.com/tpope/vim-pathogen/master/autoload/pathogen.vim
+
 if [ `find ~ -maxdepth 1 -name '.bashrc' | wc -l` -eq 0 ]; then
     echo '.bashrc Not exist'
     echo 'Creating .bashrc file'
@@ -21,11 +33,6 @@ else
 fi
 cp .vimrc ~/
 echo 'Finish copying vim config'
-
-echo 'Installing vim-pathogen'
-mkdir -p ~/.vim/autoload ~/.vim/bundle; \
-    curl -Sso ~/.vim/autoload/pathogen.vim \
-        https://raw.github.com/tpope/vim-pathogen/master/autoload/pathogen.vim
 
 echo 'Installing vim bundles'
 cp -r bundle ~/.vim/
