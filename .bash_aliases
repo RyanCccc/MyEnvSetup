@@ -7,16 +7,13 @@ pullreq() {
 }
 
 vup(){
-    cd ~/policystat/PolicyStat
+    cd ~/MyProject/PolicyStat
     vagrant up --no-provision
 }
 
 vssh(){
     vagrant ssh
 }
-
-### Added by the Heroku Toolbelt
-export PATH="/usr/local/heroku/bin:$PATH"
 
 # bash
 # No ttyctl, so we need to save and then restore terminal settings
@@ -29,5 +26,13 @@ vim()
 }
 
 sshaws(){
-    ssh -i ~/.ssh/ryanc.pem ubuntu@ec2-54-213-10-72.us-west-2.compute.amazonaws.com
+    ssh root@54.213.40.47
+}
+
+rs(){
+    python manage.py runserver
+}
+
+rshell(){
+    python manage.py shell
 }
