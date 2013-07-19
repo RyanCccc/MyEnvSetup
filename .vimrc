@@ -10,6 +10,9 @@ nnoremap <Space> :nohlsearch<CR><CR>
 nnoremap <C-s>      :w<CR>
 inoremap <C-s>      <Esc>:w<CR>
 vnoremap <C-s>      <Esc>:w<CR>
+nnoremap <C-w>q      :q<CR>
+inoremap <C-w>q      <Esc>:q<CR>
+vnoremap <C-w>q      <Esc>:q<CR>
 
 " configure expanding of tabs for various file types
 " au BufRead,BufNewFile *.py set expandtab
