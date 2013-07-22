@@ -7,7 +7,7 @@ if [ $# -eq 1 ]; then
         echo 'Finish copying vim config'
     elif [ $1 = "--collect" ]; then
         ./collect.sh
-        echo 'Finish collect bash and vim settings'
+        echo 'Finish collecting bash and vim settings'
     fi
 else
     echo 'Git Submodule'

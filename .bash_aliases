@@ -8,11 +8,15 @@ pullreq() {
 
 vup(){
     cd ~/MyProject/PolicyStat
-    vagrant up --no-provision
+    vagrant up dev --no-provision
 }
 
-vssh(){
-    vagrant ssh
+vsshdev(){
+    vagrant ssh dev
+}
+
+vsshtest(){
+    vagrant ssh test
 }
 
 # bash
