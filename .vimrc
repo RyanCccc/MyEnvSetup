@@ -54,6 +54,10 @@ au BufEnter *.py vnoremap  <C-N>n     mn:s/^\(\s*\)#\([^ ]\)/\1\2/ge<CR>gv:s/#\n
 nnoremap j h
 nnoremap k j
 nnoremap i k
+nnoremap <C-j> 5h
+nnoremap <C-k> 5j
+nnoremap <C-i> 5k
+nnoremap <C-l> 5l
 nnoremap h i
 nnoremap H I
 nnoremap ; $
@@ -64,6 +68,10 @@ nnoremap ' d$
 vnoremap j h
 vnoremap k j
 vnoremap i k
+vnoremap <C-j> 5h
+vnoremap <C-k> 5j
+vnoremap <C-i> 5k
+vnoremap <C-l> 5l
 vnoremap H I
 vnoremap ; $
 vnoremap <C-h> ^
