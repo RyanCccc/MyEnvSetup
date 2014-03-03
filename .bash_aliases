@@ -1,24 +1,3 @@
-pullreq() {
-    if [ $# -gt 0 ]; then
-        hub pull-request -i $1 -b PolicyStat:master -h PolicyStat:issue_$1     
-    else
-        echo "Usage: pullreq issue_num"
-    fi
-}
-
-vup(){
-    cd ~/MyProject/PolicyStat
-    vagrant up dev --no-provision
-}
-
-vsshdev(){
-    vagrant ssh dev
-}
-
-vsshtest(){
-    vagrant ssh test
-}
-
 # bash
 # No ttyctl, so we need to save and then restore terminal settings
 vim()
