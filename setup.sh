@@ -13,17 +13,13 @@ else
     echo 'Git Submodule'
     git submodule update --init
 
-    echo 'Install jedi'
-    sudo pip install jedi
-
-    echo 'Install jedi'
+    echo 'Install flake8'
     sudo pip install flake8
 
     echo 'Installing vim-pathogen'
     sudo apt-get install curl
-    mkdir -p ~/.vim/autoload ~/.vim/bundle; \
-        curl -Sso ~/.vim/autoload/pathogen.vim \
-            https://raw.github.com/tpope/vim-pathogen/master/autoload/pathogen.vim
+    mkdir -p ~/.vim/autoload ~/.vim/bundle && \
+        curl -LSso ~/.vim/autoload/pathogen.vim https://tpo.pe/pathogen.vim
 
     echo 'Installing vim bundles'
     cp -r bundle ~/.vim/
